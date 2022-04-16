@@ -20,7 +20,6 @@ public class LoombokTest extends TestBase {
 
         GenerateTokenResponseLombok tokenResponse =
                 given()
-                        .filter(withCustomTemplates())
                         .contentType(JSON)
                         .body(credentials)
                         .log().uri()

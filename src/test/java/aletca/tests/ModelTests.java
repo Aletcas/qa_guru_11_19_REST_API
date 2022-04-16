@@ -20,7 +20,6 @@ public class ModelTests extends TestBase {
 
         GenerateTokenResponse tokenResponse =
                 given()
-                        .filter(withCustomTemplates())
                         .contentType(JSON)
                         .body(credentials)
                         .log().uri()
